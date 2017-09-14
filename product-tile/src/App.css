@@ -1,0 +1,47 @@
+
+body {
+  background-image: radial-gradient(circle at center, #7ddbdb 10%, #278fe1 100%);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.product-image {
+  max-width: 305px;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.buy-btn {
+  display: flex;
+  text-decoration: none;
+  background: #222;
+  font-family: "Montserrat";
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 20px 35px;
+  color: #fff;
+}

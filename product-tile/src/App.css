@@ -1,31 +1,10 @@
+/**
+  Product Card - iPhone X
+ */
 
 body {
   background-image: radial-gradient(circle at center, #7ddbdb 10%, #278fe1 100%);
-}
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  font-family: "Montserrat", "Helvetica Neue", Arial, sanas-serif;
 }
 
 .product-image {
@@ -33,10 +12,12 @@ body {
   width: 100%;
   display: block;
   position: relative;
+  margin-left: -50px;
+  margin-top: 70px;
 }
 
-.buy-btn {
-  display: flex;
+.preorder-btn {
+  display: block;
   text-decoration: none;
   background: #222;
   font-family: "Montserrat";
@@ -44,4 +25,34 @@ body {
   letter-spacing: 2px;
   padding: 20px 35px;
   color: #fff;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  transition: background .35s ease-in-out;
+  cursor: pointer;
+}
+
+.preorder-btn:hover,
+.preorder-btn:active,
+.preorder-btn:focus {
+  background: #353535;
+}
+
+.product-tile-container {
+  max-width: 550px;
+  margin: 0 auto 0;
+  display: block;
+  box-shadow: 0 0 50px rgb(68, 136, 183);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.pricing-model-item {
+  font-family: "Montserrat";
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #ccc;
 }

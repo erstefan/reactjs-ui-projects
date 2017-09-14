@@ -1,0 +1,45 @@
+.github-card {
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    margin: 150px auto 0;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.15);
+}
+
+body {
+    background: #e4eff4;
+}
+:root {
+    --fontFamily: 'Roboto', Helvetica Neue, Arial, sans-serif;
+}
+
+.user__name {
+    font-family: var(--fontFamily);
+    font-weight: 300;
+    color: #222;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.user__location {
+    font-family: var(--fontFamily);
+    font-weight: 700;
+    display: block;
+    font-size: 14px;
+    color: #222;
+}
+
+.follow-user-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 3px;
+    background: #7ddbdb;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-family: var(--fontFamily);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

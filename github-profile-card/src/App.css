@@ -1,13 +1,15 @@
 .github-card {
-    max-width: 400px;
+    max-width: 300px;
     width: 100%;
     background: #fff;
-    margin: 150px auto 0;
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 80px auto 0;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.08);
+    padding-bottom: 30px;
 }
 
 body {
-    background: #e4eff4;
+    background: #a8a694;
 }
 :root {
     --fontFamily: 'Roboto', Helvetica Neue, Arial, sans-serif;
@@ -18,28 +20,56 @@ body {
     font-weight: 300;
     color: #222;
     margin-bottom: 10px;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .user__location {
     font-family: var(--fontFamily);
-    font-weight: 700;
+    font-weight: 300;
     display: block;
-    font-size: 14px;
-    color: #222;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #c9ced5;
 }
 
 .follow-user-btn {
     display: inline-block;
-    padding: 10px 25px;
-    border-radius: 3px;
-    background: #7ddbdb;
+    padding: 7px 20px;
+    /*box-shadow: 0 0 10px rgba(239,217,189, .8);*/
+    border-radius: 30px;
+    background: #a5937c;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 1px;
     text-decoration: none;
     font-family: var(--fontFamily);
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.user__bio {
+    max-width: 220px;
+    margin: 10px auto 0px;
+    font-family: var(--fontFamily);
+    font-size: 12px;
+    color: #9aa1a7;
+}
+
+.follow-count {
+    display: flex;
+}
+.follow-count span {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.users-following,
+.user-followers{
+    flex: 1;
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--fontFamily);
 }

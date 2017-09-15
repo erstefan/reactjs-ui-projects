@@ -2,19 +2,17 @@ import React from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import fontFamily from './styles-utility';
 
 const CardHeader = styled.div`
    max-width: 400px;
-   padding: 35px;
+   padding: 35px 0 35px;
    text-align: center;
    img {
-    max-width: 90px;
-    width: 90px;
-    border-radius: 3px;
+    max-width: 80px;
+    width: 100%;
+    border-radius: 40px;
    }
 `;
-
 
 class GithubProfileCard extends React.Component {
 
@@ -30,7 +28,6 @@ class GithubProfileCard extends React.Component {
 
 	fetchUser() {
 		let user = this.props.user;
-
 		axios
 			.get(`https://api.github.com/users/${user}`)
 			.then((res) =>  {
@@ -74,10 +71,19 @@ class GithubProfileCard extends React.Component {
 					</div>
 				</CardHeader>
 
-
-				<p>{followers}</p>
-				<p>{following}</p>
-				<p>{url}</p>
+				<div className="follow-count">
+					<div className="users-following">
+						{following}
+						<span>Following</span>
+					</div>
+					<div className="user-followers">
+						{followers}
+						<span className="followers">
+							Followers
+						</span>
+					</div>
+				</div>
+				{/*<p>{url}</p>*/}
             </div>
 		);
 	}
